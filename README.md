@@ -12,9 +12,8 @@ A web app for tracking fitness activities and progress.
 - User can view graphical representation of workout statistics.
 
 
-## User Journey
- ![alt text](https://github.com/TemyTemy/ecommerce-api/blob/main/assets/EcommerceBackendWeek13.gif)
-
+## Dashboard
+ ![alt text](https://github.com/TemyTemy/workout-tracker)
 
 
 ## Links on Github
