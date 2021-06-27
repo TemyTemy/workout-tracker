@@ -18,7 +18,7 @@ A web app for tracking fitness activities and progress.
 
 ## Links on Github
 
-- The source code repository is available at this link: https://github.com/TemyTemy/ecommerce-api
+- The source code repository is available at this link:https://github.com/TemyTemy/workout-tracker
 
 ## Link on heroku
 - This web app is deployed and running at: https://cryptic-oasis-69662.herokuapp.com/
