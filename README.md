@@ -21,7 +21,8 @@ A web app for tracking fitness activities and progress.
 ## Last workout summary
 ![alt text](https://github.com/TemyTemy/workout-tracker/blob/main/Assets/last-workout.PNG)
 
-
+## Workout summary after addition
+![alt text](https://github.com/TemyTemy/workout-tracker/blob/main/Assets/summary-after-addition.PNG)
 
 
 ## Link on Github
