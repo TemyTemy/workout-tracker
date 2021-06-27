@@ -13,7 +13,7 @@ A web app for tracking fitness activities and progress.
 
 
 ## Dashboard
- ![alt text](https://github.com/TemyTemy/workout-tracker)
+ ![alt text](https://github.com/TemyTemy/workout-tracker/blob/main/Assets/dashboard.PNG)
 
 
 ## Links on Github
