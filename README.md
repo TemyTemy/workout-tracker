@@ -15,18 +15,21 @@ A web app for tracking fitness activities and progress.
 ## Dashboard
  ![alt text](https://github.com/TemyTemy/workout-tracker/blob/main/Assets/dashboard.PNG)
 
-## Add new workout
+## Add new excercise
  ![alt text](https://github.com/TemyTemy/workout-tracker/blob/main/Assets/add-workout.PNG)
 
  ## Last workout summary
- ![alt text](https://github.com/TemyTemy/workout-tracker/blob/main/Assets/ast-workout.PNG)
+ ![alt text](https://github.com/TemyTemy/workout-tracker/blob/main/Assets/last-workout.PNG)
 
-## Links on Github
+
+
+
+## Link on Github
 
 - The source code repository is available at this link:https://github.com/TemyTemy/workout-tracker
 
 ## Link on heroku
 - This web app is deployed and running at: https://cryptic-oasis-69662.herokuapp.com/
 
-## License
+## Licence
 MIT
