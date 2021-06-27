@@ -23,20 +23,53 @@ app.get('/stats', (req, res) => res.sendFile(path.join(__dirname, 'public', 'sta
 app.get('/exercise', (req, res) => res.sendFile(path.join(__dirname, 'public', 'exercise.html')));
 
 
-app.get('/api/workouts', (req, res) =>  db.Workout.find({}).then((workOuts) => {
-    res.json(workOuts);
-    console.log(workOuts);
-}).catch(err => {
-    res.status(500).json(err);
-  }));
+app.get("/api/workouts", (req, res) => {
+  db.Workout.find({})
+    .then(workouts =>  {       
+      const list = workouts.map(workout => {      
+        const duration = workout.exercises.reduce((acc, next)=>{
+          return acc + (next.duration || 0);
+        }, 0);
+
+        return {
+          totalDuration: duration,
+          ...workout.toObject()
+        }
+
+      })
+      
+
+      console.log('List: ', list);
+      res.json(list); 
+    }).catch(err => { 
+      console.log(err);
+      res.json(err); 
+    });
+
+});
+
+app.put("/api/workouts/:id", async (req, res) => {  
+  db.Workout.findByIdAndUpdate(
+    req.params.id,
+    { $push: { exercises: req.body }},
+    { new: true })
+    .then(workout => { res.json(workout); })
+    .catch(err => { res.json(err); });
+});
 
 app.get("/api/workouts/range", (req, res) => {
     db.Workout.find({})
       .then(workout => {
-          res.json(workout);
-          console.log(workout);
+          res.json(workout);          
       })
       .catch(err => { console.log(err); res.json(err); });
-  });
+});
+
+app.post("/api/workouts", ({ body }, res) => {
+  db.Workout.create(body)
+    .then(workout => { res.json(workout); })
+    .catch(err => { res.json(err); });
+});
+
 
 app.listen(port, () => console.log(`App listening on port ${port}!`));
