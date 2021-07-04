@@ -24,6 +24,9 @@ A web app for tracking fitness activities and progress.
 ## Workout summary after addition
 ![alt text](https://github.com/TemyTemy/workout-tracker/blob/main/Assets/summary-after-additions.PNG)
 
+## LightHouse Audit Report
+![alt text](https://github.com/TemyTemy/workout-tracker/blob/main/Assets/LightHouse-Audit-Report.PNG)
+
 
 ## Link on Github
 
